@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="/css/report_desk.css" />
+<div id="report-container">
+    <ul>
+        <% for(report of reports){ %>
+            <li>
+                <a href="/report/<%= report.id %>"><%= report.name %></a>
+            </li>
+        <% } %>
+    </ul>
+</div>

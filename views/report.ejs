@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="/css/report.css">
+<div id="report-container">
+    <table id="reportTable">
+        <thead>
+            <% for(column of report.columns) { %>
+                <th><%= column %></th>
+            <% } %>
+        </thead>
+        <% for(row of report.rows) { %>
+            <tr>
+                <% for(val of row) { %>
+                    <td><%= val %></td>
+                <% } %>
+            </tr>
+        <% } %>
+    </table>
+</div>
+
+<script src="/js/datatable.js"></script>
